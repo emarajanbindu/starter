@@ -12,13 +12,50 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/d7a_QhSB9lE?si=EHHCC9iPTIbV8EpG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </center>
 <h1>PARKING AVAILABILITY</h1>
-<TABLE border="1">
-    <TR>
-        <td>No of Space</td> <td>Occupied</td> <td>Remaining Space</td>
-    </tr>
-    <tr>
-        <td>12 Nos</td> <td>10 Nos</td> <td>2 Nos</td>
-    </tr>
+<div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mobile">Mobile</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mobile" name="Mobile" placeholder="Your Mobile No..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Tondiarpet">Area</label>
+      </div>
+      <div class="col-75">
+        <select id="Tondiarpet" name="Tondiarpet">
+          <option value="korukkupet">korukkupet</option>
+          <option value="ioc">ioc</option>
+          <option value="powerhouse">powerhouse</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Car Details.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+  </div>
 </TABLE>
 <hr>
 <p>
